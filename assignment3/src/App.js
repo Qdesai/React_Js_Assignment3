@@ -2,7 +2,6 @@
 // MOhammed qaasim desai 
 // 0776412
 
-
 import React, { useState, useEffect} from "react";
 import { Row, Col,  Divider} from "antd";
 import axios from "axios";
