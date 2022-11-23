@@ -1,18 +1,7 @@
-/* import logo from './logo.svg';
-import { DatePicker } from 'antd';
-import './App.css';
 
-function App() {
-  return (
-    <div>
-      <h1>hii</h1>
-      <DatePicker/>
-    </div>
-  );
-}
+// MOhammed qaasim desai 
+// 0776412
 
-export default App;
- */
 
 import React, { useState, useEffect} from "react";
 import { Row, Col,  Divider} from "antd";
