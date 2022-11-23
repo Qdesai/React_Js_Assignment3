@@ -41,7 +41,7 @@ function App(){
         <div>
             <Row gutter={16}>
                 <Col className="gutter-row">
-                    Assignment-3 Mohammed Qaasim Desai
+                    <center><h1>Assignment-3 Mohammed Qaasim Desai</h1></center>
                 </Col>
             </Row>
             <Divider orientation="Center">Profiles</Divider>
