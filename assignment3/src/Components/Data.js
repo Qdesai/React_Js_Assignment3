@@ -11,11 +11,11 @@ export default function Data(props){
             <Col className="gutter-row" xs={24} xl={8}>
                     <Card
                     title= {props.name}
-                    style={ { width: 300, background: '#32CD32', padding: '20px 10px', fontSize:'18px'} }>
+                    style={ { width: 300, background: '#32CD32', padding: '20px 10px', fontSize:'15px'} }>
 
-                    <p>Email: {props.email}</p>
-                    <p>Website: {props.website}</p>
-                    <p>phone: {props.phone}</p>
+                    <p><b>Email:</b> {props.email}</p>
+                    <p><b>Website:</b> {props.website}</p>
+                    <p><b>phone:</b> {props.phone}</p>
 
                     </Card>
             </Col>

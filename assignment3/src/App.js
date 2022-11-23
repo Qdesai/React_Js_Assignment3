@@ -36,7 +36,7 @@ function App(){
 
             <Row gutter={16}>
                  {status && infos.map((infosObj)=>{
-                    return <Data name={infosObj.name} email={infosObj.email} website={infos.website} phone={infosObj.phone}/>
+                    return <Data name={infosObj.name} email={infosObj.email} website={infosObj.website} phone={infosObj.phone}/>
                 })}
             </Row> 
         </div>
