@@ -5,6 +5,8 @@
 import React, { useState, useEffect} from "react";
 import { Row, Col,  Divider} from "antd";
 import axios from "axios";
+import {Route, Routes} from "react-router-dom";
+import Login from "./Components/Login";
 
 
 import Data from "./Components/Data";
@@ -27,6 +29,10 @@ function App(){
 
     return(
         <div>
+            <Routes>
+                <Route path="/Login" element={<Login/>}/>
+            </Routes>
+
             <Row gutter={16}>
                 <Col className="gutter-row">
                     <center><h1>Assignment-3 Mohammed Qaasim Desai</h1></center>
