@@ -7,8 +7,6 @@ import { Row, Col,  Divider} from "antd";
 import axios from "axios";
 import {Route, Routes} from "react-router-dom";
 import Login from "./Components/Login";
-
-
 import Data from "./Components/Data";
 
 function App(){
@@ -39,6 +37,8 @@ function App(){
                 </Col>
             </Row>
             <Divider orientation="Center">Profiles</Divider>
+
+            <Data/>
 
             <Row gutter={16}>
                  {status && infos.map((infosObj)=>{
