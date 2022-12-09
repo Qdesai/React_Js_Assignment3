@@ -1,13 +1,24 @@
 // MOhammed qaasim desai 
 // 0776412
 
-import { Card, Col } from "antd";
+import { Card, Col, Button, Row, Divider } from "antd";
+import React, { useState, useEffect} from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import App from "../App";
 
 
 
 export default function Data(props){
     return(
         <div>
+          
+        
+          <Button>
+                <Link to="/login">Logout</Link>
+            </Button>
+
+            
             <Col className="gutter-row" xs={24} xl={8}>
                     <Card
                     title= {props.name}
@@ -19,6 +30,8 @@ export default function Data(props){
 
                     </Card>
             </Col>
+
+ 
         </div>
     );
 }

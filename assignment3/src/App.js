@@ -27,18 +27,6 @@ function App(){
 
     return(
         <div>
-            <Routes>
-                <Route path="/Login" element={<Login/>}/>
-            </Routes>
-
-            <Row gutter={16}>
-                <Col className="gutter-row">
-                    <center><h1>Assignment-3 Mohammed Qaasim Desai</h1></center>
-                </Col>
-            </Row>
-            <Divider orientation="Center">Profiles</Divider>
-
-            <Data/>
 
             <Row gutter={16}>
                  {status && infos.map((infosObj)=>{

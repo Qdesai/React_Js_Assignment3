@@ -1,10 +1,15 @@
 import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, Checkbox, Col, Form, Input, Row } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+    const navigate = useNavigate();
+
   const onFinish = (values) => {
-    console.log('Success:', values);
+    if(values.username === "admin" && values.password === "password123"){
+        navigate("/data");
+    }
   };
 
 
@@ -14,8 +19,10 @@ const Login = () => {
 
 
 
-  
   return (
+    
+    <Row style={{marginTop:"50px"}}>
+        <Col span={8} offset={6}>
     <Form
       name="basic"
       labelCol={{
@@ -79,6 +86,9 @@ const Login = () => {
         </Button>
       </Form.Item>
     </Form>
+    </Col>
+    </Row>
   );
 };
+
 export default Login;
